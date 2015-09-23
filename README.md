@@ -1,9 +1,19 @@
 # apache-conf
 Usefull Apache configurations, Proxy settings, hardening, ...
 
-## Contents
+## Usage
 
-Contains example configurations that can be included in main `httpd.conf` of Apache
+Contains example configurations that can be included in main `httpd.conf` of Apache.
+
+### Apache 2.2.26 on CentOS, Red Hat
+
+Copy config files you like to Apache host (eg. `/etc/httpd/custom` directory) and include them with:
+
+	Include custom/hardening.conf
+
+**Hint:** Default Apache config already includes all `.conf` files from `conf.d/` directory. So just copy the ones that you like to `/etc/httpd/conf.d` and adjust to your needs.
+
+## Contents
 
 ### encoding.conf
 
